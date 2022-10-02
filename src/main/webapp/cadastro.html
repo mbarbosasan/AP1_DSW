@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Hobbies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="hero is-fullheight has-text-centered mt-3 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+        <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-5 has-background-primary-dark">
+            <h1 class="title has-text-white ">Cadastro de Hobbies</h1>
+            <p class="subtitle has-text-white">Insira abaixo o seu hobbie favorito e o horario em que voce costuma pratica-lo.</p>
+            <form class="is-flex is-flex-direction-column" action="cadastro-servlet" method="POST">
+                <label class="label has-text-white" for="nome">Hobbie
+                    <div class="control">
+                        <input class="input" type="text" name="nome" id="nome" required>
+                    </div>
+                </label>
+                <label class="label has-text-white" for="horario">Horario
+                    <div class="control">
+                        <input class="input" type="time" name="horario" id="horario" required>
+                    </div>
+                </label>
+                <div class="is-flex">
+                    <a href="index.html" class="button is-danger mr-1">Cancelar</a>
+                    <button class="button" type="submit">Cadastrar Hobbie</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

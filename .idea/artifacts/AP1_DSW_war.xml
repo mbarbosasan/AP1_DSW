@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AP1_DSW:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>AP1_DSW</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="AP1_DSW-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="AP1_DSW:war exploded" />
+    </root>
+  </artifact>
+</component>

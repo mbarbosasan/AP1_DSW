@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tente a sorte!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="hero is-fullheight has-text-centered mt-3 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+        <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <form action="random-game-servlet" method="POST" class="has-background-primary-dark p-5 ">
+                <h1 class="title has-text-white">Hora de tentar adivinhar o numero!</h1>
+                <label for="numero" class="label has-text-white">Digite um numero de 1 a 5.
+                    <input type="number" name="numero" id="numero" class="input" min="1" max="5">
+                </label>
+                <div class="is-flex is-justify-content-center">
+                    <a href="./index.html" class="button is-danger mr-3 mt-3">Cancelar</a>
+                    <button type="submit" class="button mt-3">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
